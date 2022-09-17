@@ -32,26 +32,26 @@ const percent = e =>{
   return (
     <div className="container">
       <div className='wrapper'>
-      <div className="display-screen"></div>
-      <div className="grey-buttons" onClick={reset} >AC</div>
-      <div className="grey-buttons" onClick={plusMinus} >+/-</div>
-      <div className="grey-buttons" onClick={percent} >%</div>
-      <div className="orange-buttons" onClick={operatorType}>÷</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>7</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>8</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>9</div>
-      <div className="orange-buttons" onClick={operatorType}>X</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>4</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>5</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>6</div>
-      <div className="orange-buttons" onClick={operatorType}>-</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>1</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>2</div>
-      <div className="dark-grey-buttons" onClick={inputNumber}>3</div>
-      <div className="orange-buttons" onClick={operatorType}>+</div>
-      <div className="wide-dark-grey-button"onClick={inputNumber}>0</div>
-      <div className="dark-grey-buttons">.</div>
-      <div className="orange-buttons" onClick={equals}>=</div>
+      <div className="display-screen">{input}</div>
+      <div className="buttons grey" onClick={reset} >AC</div>
+      <div className="buttons grey" onClick={plusMinus} >+/-</div>
+      <div className="buttons grey" onClick={percent} >%</div>
+      <div className="buttons orange" onClick={operatorType}>÷</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>7</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>8</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>9</div>
+      <div className="buttons orange" onClick={operatorType}>X</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>4</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>5</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>6</div>
+      <div className="buttons orange" onClick={operatorType}>-</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>1</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>2</div>
+      <div className="buttons dark-grey" onClick={inputNumber}>3</div>
+      <div className="buttons orange" onClick={operatorType}>+</div>
+      <div className="buttons wide-dark-grey"onClick={inputNumber}>0</div>
+      <div className="buttons dark-grey">.</div>
+      <div className="buttons orange" onClick={equals}>=</div>
 
 
 

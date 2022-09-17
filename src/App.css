@@ -15,16 +15,50 @@ body{
 }
 .container{
   width: 50vh;
-  max-height: 80vh;
+  height: 80vh;
   align-self: center;
-  border: 2px solid;
-  border-radius: 20px;
-  
-
-
+  background-color: black;
+  border-radius: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50,50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50,50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50,50, 0.75);
 }
-.wrapper{}
-.display-screen{}
-.grey-buttons{}
-.orange-buttons{}
-.dark-grey-buttons{}
+.wrapper{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 10px;
+} 
+.display-screen{
+  grid-column: 1/-1;
+  color: white;
+  text-align: right;
+  padding: 0.5rem;
+  font-size: 4rem;
+  overflow: hidden;
+}
+.buttons {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: rgb(147, 150, 152);
+}
+.buttons:hover{
+  font-size: 1.8rem;
+}
+.orange{
+  background-color: rgb(240, 143, 16);
+}
+.dark-grey{
+  background-color: rgb(65, 67, 69);
+}
+.wide-dark-grey{
+  background-color: rgb(65, 67, 69);
+  border-radius: 30px;
+  grid-column: 1/3;
+}
